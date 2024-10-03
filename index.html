@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="display" id="display"></div>
+        <div class="numbers">
+          <div class="btn-1">
+            <button id="hist" onclick="displayHistory()">H</button>
+            <button id="adds" onclick="sqrt()">√</button>
+            <button id="percentage" onclick="square()">²</button>
+            <button id="divide" onclick="addNumToDisplay('/')">/</button>
+          </div>
+          <div class="btn-1">
+            <button id="seven" onclick="addNumToDisplay(7)">7</button>
+            <button id="eight" onclick="addNumToDisplay(8)">8</button>
+            <button id="nine" onclick="addNumToDisplay(9)">9</button>
+            <button id="multiply" onclick="addNumToDisplay('*')">*</button>
+          </div>
+          <div class="btn-1">
+            <button id="four" onclick="addNumToDisplay(4)">4</button>
+            <button id="five" onclick="addNumToDisplay(5)">5</button>
+            <button id="six" onclick="addNumToDisplay(6)">6</button>
+            <button id="minus" onclick="addNumToDisplay('-')">-</button>
+          </div>
+          <div class="btn-1">
+            <button id="one" onclick="addNumToDisplay(1)">1</button>
+            <button id="two" onclick="addNumToDisplay(2)">2</button>
+            <button id="three" onclick="addNumToDisplay(3)">3</button>
+            <button id="add" onclick="addNumToDisplay('+')">+</button>
+          </div>
+          <div class="btn-1">
+            <button id="del" onclick="clearDisplay()">del</button>
+            <button id="zero" onclick="addNumToDisplay(0)">0</button>
+            <button id="dot" onclick="addNumToDisplay('.')">.</button>
+            <button id="equal" onclick="sumDisplay()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
